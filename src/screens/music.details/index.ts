@@ -1,0 +1,1 @@
+export { MusicDetailsContainer as default } from './music.details.container';
