@@ -5,10 +5,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import Avatar from '@material-ui/core/Avatar';
-import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import ArtistSearchService from '../services/artist.search';
-import { useDispatch, useSelector } from 'react-redux';
+import {useDispatch} from 'react-redux';
 
 const useStyles = makeStyles((theme) => ({
     grow: {

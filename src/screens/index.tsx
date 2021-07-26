@@ -1,6 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import Tab from '../components/tab';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Header from '../components/header';
 import MusicGrid from './muisc.grid';
 import MusicDetails from './music.details';

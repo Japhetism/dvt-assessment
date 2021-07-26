@@ -2,11 +2,6 @@ import React, {useEffect, useState} from 'react';
 import MusicCard from '../../components/music.card';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import Radio from '@material-ui/core/Radio';
-import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,20 +27,14 @@ const useStyles = makeStyles((theme) => ({
 
 const MusicGridView = (props: any) => {
 
-    const [spacing, setSpacing] = React.useState(2);
-    const classes = useStyles();
-
-    const handleChange = (event: any) => {
-        setSpacing(Number(event.target.value));
-    };
+  const classes = useStyles();
     
-    const [artists, setArtists] = useState([]);
+  const [artists, setArtists] = useState([]);
 
-    useEffect(() => {
-        const artists = props?.artists?.artistData?.artistList?.data;
-        console.log(artists)
-        setArtists(artists)
-    }, [props])
+  useEffect(() => {
+    const artists = props?.artists?.artistData?.artistList?.data;
+    setArtists(artists)
+  }, [props])
 
     return (
         <Grid container className={classes.root}>

@@ -2,53 +2,48 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles({
-    root1: {
-      width: 845,
-    },
-    root2: {
-      width: 445,
-    },
-    media: {
-      height: 240,
-    },
+  root1: {
+    width: 845,
+  },
+  root2: {
+    width: 445,
+  },
+  media: {
+    height: 240,
+  },
 });
 
 const MusicTracks = (props: any) => {
     
-    const classes = useStyles();
+  const classes = useStyles();
 
-    return <React.Fragment>
- <Card className={classes.root1}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image="/assets/images/logo.png"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Bruno Mars
-              </Typography>
-              <Typography gutterBottom variant="h5" component="h2">
-                382K Fans
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+  return <React.Fragment>
+    <Card className={classes.root1}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="/assets/images/logo.png"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Bruno Mars
+          </Typography>
+          <Typography gutterBottom variant="h5" component="h2">
+            382K Fans
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
         <Card className={classes.root2}>
           <CardActionArea>
             <CardContent>

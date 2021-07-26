@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import {useSelector} from 'react-redux';
 import MusicGridView from './music.grid.view';
-import ArtistSearchService from '../../services/artist.search';
 
 export const MusicGridContainer = () => {
 
