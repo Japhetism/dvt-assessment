@@ -10,8 +10,8 @@ const Home = () => {
         <Header />
         <Router>
             <Route exact path="/" component={MusicGrid} />
-            <Route exact path="/playlist" component={MusicGrid} />
-            <Route exact path="/playlist/:id" component={MusicDetails} />
+            <Route exact path="/artist" component={MusicGrid} />
+            <Route exact path="/artist/:id" component={MusicDetails} />
         </Router>
     </React.Fragment> 
 }

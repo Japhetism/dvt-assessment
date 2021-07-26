@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles({
     root: {
@@ -24,23 +25,25 @@ const MusicCard = (props: any) => {
   const classes = useStyles();
 
     return (
+      <Link to={`artist/${props?.data?.id}`}>
         <Card className={props.width}>
           <CardActionArea>
             <CardMedia
-              className={props.height}
-              image={props.data.picture_medium}
+              className={props?.height}
+              image={props?.data?.picture_medium}
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                {props.data.name}
+                {props?.data?.name}
               </Typography>
               <Typography gutterBottom variant="h5" component="h2">
-                {props.data.nb_fan}
+                {props?.data?.nb_fan}
               </Typography>
             </CardContent>
           </CardActionArea>
         </Card>
+        </Link>
     );
 }
 
